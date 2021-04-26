@@ -29,7 +29,7 @@ to get the development dependencies via pip and requirements.txt (run this only 
 > pip install -r requirements.txt
 
 to run the unit tests:
-> PYTHONPATH=. python -m unittest tests/*
+> PYTHONPATH=. python -m unittest discover -s tests
 
 to run the linting:
 > flake8

@@ -15,7 +15,7 @@ A widget resource has the following properties:
 
 ## Src Control Repo
 
-xxxxxxxxx
+https://github.com/jmcanulty5/WidgetAPI
 
 ## Primary Shell Commands For Project Developers
 

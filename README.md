@@ -41,8 +41,11 @@ remove "-x /env" if you wish to scan every included lib as well (after all, a so
 
 to run the flask development server:
 > export FLASK_APP=flaskapp
+
 > export FLASK_ENV=development
+
 > export CONNECT_STR=local.db
+
 > python -m flask run
 
 After starting the server, load up the postman collection in the project root into postman. From here, you'll be able to see sample requests and play around with the endpoints of this api.

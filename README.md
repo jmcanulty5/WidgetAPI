@@ -11,7 +11,7 @@ A widget resource has the following properties:
   * Number of parts (integer)
   * Created date (date, automatically set)
   * Updated date (date, automatically set)
-  * potentially more proprties can optionally be defined, and they're structure is unspecified
+  * potentially more proprties can optionally be defined, and their structure is unspecified
 
 ## Src Control Repo
 
@@ -36,12 +36,13 @@ to run the linting:
 
 to run bandit static security scans:
 > bandit -r . -x /env
-\*remove "-x /env" if you wish to scan every included lib as well, although be mindful that this will scan many files and some of them will be dev dependencies only, so some false positive risks may occur.
+
+remove "-x /env" if you wish to scan every included lib as well (after all, a software system is usually compromised of more than just what we write, and third party libraries shouldn't always be assumed to be safer than what we write), although be mindful that this will scan many files and some of them will be dev dependencies only, so some false positive risks may occur.
 
 to run the flask development server:
 > export FLASK_APP=flaskapp
-> export FLASK_ENV=development # run this if you want dev features (hot reloading and flask debugger)
-> export CONNECT_STR=local.db # this app depends on sqlite. you must set this.
+> export FLASK_ENV=development
+> export CONNECT_STR=local.db
 > python -m flask run
 
 After starting the server, load up the postman collection in the project root into postman. From here, you'll be able to see sample requests and play around with the endpoints of this api.

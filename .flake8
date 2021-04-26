@@ -1,0 +1,10 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    env,
+    build,
+    dist
+select = F,C90,E,W
+max-line-length = 120
+max-complexity = 10
